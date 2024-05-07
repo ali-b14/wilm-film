@@ -50,6 +50,12 @@ public class CacheConfiguration {
             createCache(cm, com.wilmfilm.app.domain.User.class.getName());
             createCache(cm, com.wilmfilm.app.domain.Authority.class.getName());
             createCache(cm, com.wilmfilm.app.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.wilmfilm.app.domain.Video.class.getName());
+            createCache(cm, com.wilmfilm.app.domain.VideoMetaData.class.getName());
+            createCache(cm, com.wilmfilm.app.domain.Comment.class.getName());
+            createCache(cm, com.wilmfilm.app.domain.Like.class.getName());
+            createCache(cm, com.wilmfilm.app.domain.Watched.class.getName());
+            createCache(cm, com.wilmfilm.app.domain.WatchLater.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }
