@@ -20,6 +20,7 @@ import org.hibernate.annotations.CacheConcurrencyStrategy;
 //
 //
 //
+//
 /**
  * A user.
  */
