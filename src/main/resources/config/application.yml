@@ -20,13 +20,11 @@ cloud:
       access-key:
       secret-key:
     region:
-      static: us-east-1
     stack:
       auto: false
 
 application:
-  bucket:
-    name: zcw-student-projects
+  bucket-name:
 
 server:
   port: 8080
