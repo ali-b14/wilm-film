@@ -17,14 +17,14 @@
 cloud:
   aws:
     credentials:
-      access-key:
-      secret-key:
-    region:
+      access-key: process.env.ACCESS-KEY
+      secret-key: process.env.SECRET-KEY
+    region: process.env.REGION
     stack:
       auto: false
 
 application:
-  bucket-name:
+  bucket-name: process.env.BUCKET-NAME
 
 server:
   port: 8080
