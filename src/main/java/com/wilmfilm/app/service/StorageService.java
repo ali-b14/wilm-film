@@ -38,6 +38,7 @@ public class StorageService {
         S3ObjectInputStream inputStream = s3Object.getObjectContent();
         try {
             byte[] content = IOUtils.toByteArray(inputStream);
+            return content;
         } catch (IOException e) {
             e.printStackTrace();
         }
