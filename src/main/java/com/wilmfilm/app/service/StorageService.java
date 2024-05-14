@@ -19,8 +19,8 @@ import org.springframework.web.multipart.MultipartFile;
 @Slf4j
 public class StorageService {
 
-    @Value("${application.bucket.name}")
-    private String bucketName;
+    //    @Value("${application.bucket.name}")
+    private String bucketName = "wilmfilmbucket";
 
     @Autowired
     private AmazonS3 s3Client;
@@ -55,7 +55,7 @@ public class StorageService {
         try (FileOutputStream fos = new FileOutputStream(convertedFile)) {
             fos.write(file.getBytes());
         } catch (IOException e) {
-            log.error("Error converting multipartFile to file", e);
+            e.printStackTrace();
         }
         return convertedFile;
     }

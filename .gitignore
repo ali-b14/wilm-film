@@ -7,11 +7,12 @@ node_modules/
 npm-debug.log.*
 /.awcache/*
 /.cache-loader/*
-**/.env
+.env
 ######################
 # SASS
 ######################
 .sass-cache/
+
 
 ######################
 # Eclipse

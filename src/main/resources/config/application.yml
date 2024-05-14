@@ -17,14 +17,15 @@
 cloud:
   aws:
     credentials:
-      access-key: process.env.ACCESS-KEY
-      secret-key: process.env.SECRET-KEY
-    region: process.env.REGION
+      access-key: '${ACCESS-KEY}'
+      secret-key: '${SECRET-KEY}'
+    region: us-east-2
     stack:
       auto: false
 
-application:
-  bucket-name: process.env.BUCKET-NAME
+#application:
+#  bucket:
+#    name: wilmfilmbucket
 
 server:
   port: 8080
