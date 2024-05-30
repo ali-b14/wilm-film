@@ -17,8 +17,8 @@
 cloud:
   aws:
     credentials:
-      access-key: '${ACCESS-KEY}'
-      secret-key: '${SECRET-KEY}'
+      access-key: AK
+      secret-key: SK
     region: us-east-2
     stack:
       auto: false
