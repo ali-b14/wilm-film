@@ -17,15 +17,15 @@
 cloud:
   aws:
     credentials:
-      access-key: AK
-      secret-key: SK
+      access-key: Access-key
+      secret-key: Secret-key
     region: us-east-2
     stack:
       auto: false
 
-#application:
-#  bucket:
-#    name: wilmfilmbucket
+application:
+  bucket:
+    name: Bucket-name
 
 server:
   port: 8080
